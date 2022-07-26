@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up | TermBuddy</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="flex">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div>
+                    <a href="../Login/login.html"><button>Sign In</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="main-container">
+                <div class="forgot-img">
+                    <img src="signup.svg" alt="an illustration of a woman tapping on a large screen">
+                </div>
+                <div class="form-wrapper">
+                    <div class="form-text">
+                        <h2>Sign Up</h2>
+                    </div>
+                    <form action="">
+                        <div>
+                            <label for="firstname">First Name
+                                <img class="input-icon" src="input-user.svg" alt="an icon of an user">
+                            </label>
+                            <input type="text" name="firstname" id="firstname" placeholder="John">
+                        </div>
+                        <div>
+                            <label for="lastname">Last Name
+                                <img class="input-icon" src="input-user.svg" alt="an icon of a user">
+                            </label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Doe">
+                        </div>
+                        <div>
+                            <label for="email">Email
+                                <img class="input-icon" src="../input-email.svg" alt="an icon of an envelop">
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                        </div>
+                        <div>
+                            <label for="password">Password
+                                <img class="input-icon" src="../Reset/input-security.svg" alt="an icon of a padlock">
+                                <img class="input-icon eye-off" src="../Reset/eye-off.svg"
+                                    alt="an icon of an eye with a slash on it">
+                                <img class="input-icon eye" src="../Reset/eye.svg" alt="an icon of an eye with a slash on it">
+                            </label>
+                            <input type="password" name="password" id="password" placeholder="*******">
+                        </div>
+                        <div class="terms">
+                            <input type="checkbox" name="terms" id="terms">
+                            <label for="terms">I Agree to all the <a class="" href="#">Terms and Conditions</a></label>
+                        </div>
+                        <input type="submit" value="Sign Up">
+                    </form>
+                    <h4>Or Sign Up With</h4>
+                    <div class="signup-with">
+                            <button><img src="google.svg" alt="apple logo"> Google</button>
+                            <button><img src="apple.svg" alt="apple logo"> Apple</button>
+                    </div>
+                    <p class="signin-text">Already have an account? <a class="signin-text-link" href="../Login/login.html">Sign In</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
