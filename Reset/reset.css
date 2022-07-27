@@ -50,7 +50,7 @@ header {
     background: #FEFEFE;
 }
 
-.forgot-img {
+.reset-img {
     max-width: 406px;
     flex: 1;
     background: #B8D3D2;
@@ -61,7 +61,7 @@ header {
     padding: 2rem;
 }
 
-.forgot-img img {
+.reset-img img {
     border-radius: 2rem 0 0 2rem;
 }
 
@@ -154,14 +154,14 @@ input[type="submit"] {
         max-width: 450px;
     }
 
-    .forgot-img {
+    .reset-img {
         max-width: 100%;
         border-radius: 0;
         background: #F5F5F5;
         padding-bottom: 3rem;
     }
 
-    .forgot-img img {
+    .reset-img img {
         border-radius: 2rem 2rem 0 0;
         height: 250px;
         width: 100%;

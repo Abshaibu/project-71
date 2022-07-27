@@ -73,7 +73,7 @@ header button {
     align-items: center;
 }
 
-.forgot-img {
+.signup-img {
     max-width: 406px;
     flex: 1;
     background: #B8D3D2;
@@ -84,7 +84,7 @@ header button {
     padding: 2rem;
 }
 
-.forgot-img img {
+.signup-img img {
     border-radius: 2rem 0 0 2rem;
 }
 
@@ -222,14 +222,14 @@ h4 {
     margin-right: .7rem;
 }
 
-.signin-text {
+.signup-text {
     font-family: 'Poppins',
         sans-serif;
         margin: 2rem 0 5rem;
         font-size: 1rem;
 }
 
-.signin-text-link {
+.signup-text-link {
     font-family: 'Poppins',
         sans-serif;
     font-weight: 600;
@@ -240,22 +240,18 @@ h4 {
         flex-direction: column;
     }
 
-    .forgot-img {
+    .signup-img {
         max-width: 100%;
         border-radius: 2rem 2rem 0 0;
         height: 250px;
     }
 
-    .forgot-img img {
+    .signup-img img {
         border-radius: 2rem 2rem 0 0;
     }
 
     .form-wrapper {
         padding: 0 1rem;
-    }
-
-    .login-link {
-        margin-bottom: 5rem;
     }
 }
 
@@ -276,7 +272,7 @@ h4 {
         width: 90%;
     }
 
-    .forgot-img {
+    .signup-img {
         border-radius: 0;
         background: #F5F5F5;
         max-width: 100%;

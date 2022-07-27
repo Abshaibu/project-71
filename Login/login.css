@@ -72,7 +72,7 @@ header button {
     align-items: center;
 }
 
-.forgot-img {
+.login-img {
     max-width: 406px;
     flex: 1;
     background: #B8D3D2;
@@ -83,7 +83,7 @@ header button {
     padding: 2rem;
 }
 
-.forgot-img img {
+.login-img img {
     border-radius: 2rem 0 0 2rem;
 }
 
@@ -195,7 +195,7 @@ input[type="checkbox"] {
     font-size: .95rem;
 }
 
-.forgot-link {
+.signin-link {
     font-size: .95rem;
     margin-top: -.5rem;
 }
@@ -208,7 +208,7 @@ h4 {
     margin: 1rem 0 1.5rem;
 }
 
-.signup-with {
+.signin-with {
     display: flex;
     align-items: center;
     gap: 1.7rem;
@@ -218,7 +218,7 @@ h4 {
     margin: 0 auto;
 }
 
-.signup-with button {
+.signin-with button {
     color: #2B2B2B;
     font-weight: 700;
     padding: 0.5rem 0;
@@ -228,7 +228,7 @@ h4 {
     justify-content: center;
 }
 
-.signup-with button img {
+.signin-with button img {
     margin-right: .7rem;
 }
 
@@ -250,13 +250,13 @@ h4 {
         flex-direction: column;
     }
 
-    .forgot-img {
+    .login-img {
         max-width: 100%;
         border-radius: 2rem 2rem 0 0;
         height: 250px;
     }
 
-    .forgot-img img {
+    .login-img img {
         border-radius: 2rem 2rem 0 0;
     }
 
@@ -270,11 +270,11 @@ h4 {
 }
 
 @media screen and (max-width: 1106px) {
-    .signup-with {
+    .signin-with {
         flex-direction: column;
     }
 
-    .signup-with button {
+    .signin-with button {
         width: 100%;
     }
 }
@@ -286,7 +286,7 @@ h4 {
         width: 90%;
     }
 
-    .forgot-img {
+    .login-img {
         border-radius: 0;
         background: #F5F5F5;
         max-width: 100%;
