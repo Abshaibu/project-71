@@ -39,6 +39,12 @@ button {
     padding: 0.5rem 1rem;
     text-align: center;
     border-radius: 0.5rem;
+    transition: all 0.25s linear;
+}
+
+header button:hover {
+    background: #2B7A78;
+    color: #F5F5F5;
 }
 
 .container {
@@ -162,6 +168,12 @@ input[type="submit"] {
     cursor: pointer;
     text-align: center;
     font-weight: 600;
+}
+
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border: 1px solid #2B7A78;
+    outline: 1.2px solid #2B7A78;
 }
 
 .terms {

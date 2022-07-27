@@ -112,6 +112,11 @@ input {
     outline: none;
 }
 
+input[type="email"]:focus {
+    border: 1px solid #2B7A78;
+    outline: 1.2px solid #2B7A78;
+}
+
 .input-email {
     position: absolute;
     left: 18px;
