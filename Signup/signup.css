@@ -120,6 +120,7 @@ form {
 label {
     display: block;
     margin-bottom: .5rem;
+    margin-top: .8rem;
 }
 
 input {
@@ -130,7 +131,6 @@ input {
     border-radius: .5rem;
     font-size: 1.125rem;
     color: #272727;
-    margin-bottom: 1rem;
     font-family: 'Mulish',
         sans-serif;
     outline: none;
@@ -152,6 +152,23 @@ input {
     display: none;
     cursor: pointer;
     left: 88%;
+}
+
+.error-message {
+    background: #F9C3B4;
+    color: #ED4A1F;
+    font-size: .95rem;
+    padding: .3rem .9rem;
+    border-radius: .5rem;
+    margin-top: .4rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    display: none;
+}
+
+.error-icon {
+    transform: translateY(2px);
 }
 
 input[type="submit"] {
@@ -179,6 +196,7 @@ input[type="checkbox"] {
     border-radius: .5rem;
     cursor: pointer;
     transform: translateY(4px);
+    accent-color: #2B7A78;
 }
 
 input[type="password"]:focus,

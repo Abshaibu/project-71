@@ -19,8 +19,8 @@
         <div class="container">
             <div class="flex">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Logo">
+                    <a href="../index.html">
+                        <img src="../images/logo.svg" alt="Logo">
                     </a>
                 </div>
                 <div>
@@ -45,9 +45,17 @@
                                 <img class="input-icon" src="../input-email.svg" alt="an icon of an envelop">
                             </label>
                             <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                            <p class="error-message">
+                                <span class="error-icon">
+                                    <img src="../x-icon.svg" alt="an x icon">
+                                </span>
+                                <span class="error-text">
+                                    Provide a valid email address
+                                </span>
+                            </p>
                         </div>
                         <div>
-                            <label for="password">Password
+                            <label for="password" class="label">Password
                                 <img class="input-icon" src="../Reset/input-security.svg" alt="an icon of a padlock">
                                 <img class="input-icon eye-off" src="../Reset/eye-off.svg"
                                     alt="an icon of an eye with a slash on it">
@@ -55,11 +63,19 @@
                                     alt="an icon of an eye with a slash on it">
                             </label>
                             <input type="password" name="password" id="password" placeholder="*******">
+                            <p class="error-message">
+                                <span class="error-icon">
+                                    <img src="../x-icon.svg" alt="an x icon">
+                                </span>
+                                <span class="error-text">
+                                    Password cannot be blank
+                                </span>
+                            </p>
                         </div>
                         <div class="remember-wrapper">
                             <div class="terms">
                                 <input type="checkbox" name="terms" id="terms">
-                                <label for="terms">Remember me</label>
+                                <label for="terms" class="terms-label">Remember me</label>
                             </div>
                             <p class="signin-link"><a href="../forgot.html">Forgot password?</a></p>
                         </div>
