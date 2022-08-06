@@ -267,34 +267,277 @@ main {
     padding-top: 0.4rem;
 }
 
+/* Modal */
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.3s linear;
+    overflow: auto;
+}
+
+.inner-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 9rem;
+}
+
+.modal-form-wrapper {
+    max-width: 528px;
+    width: 90%;
+    background: #FEFEFE;
+    border-radius: 1rem;
+    padding: 4rem;
+    padding-bottom: 2rem;
+    color: #525252;
+}
+
+.form-cls {
+    position: absolute;
+    top: 1.125rem;
+    right: 1.125rem;
+}
+
+.modal-form-wrapper small {
+    font-size: .75rem;
+    font-weight: 700;
+    color: #039855;
+    display: inline-block;
+    margin-top: .5rem;
+}
+
+.modal-form-wrapper h2 {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+    margin-bottom: 1rem;
+    color: #272727;
+}
+
+.modal-form-wrapper h3 {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    color: #272727;
+}
+
+.modal-form-wrapper button {
+    padding: 0;
+    border: none;
+}
+
+.modal-form-wrapper p {
+    color: #525252;
+    font-size: 1rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #B8D3D2;
+    border-radius: .5rem;
+}
+
+.progress-bar::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #2B7A78;
+    border-radius: .5rem;
+    z-index: 2;
+    transition: all 0.25s linear;
+}
+
+form,
+input {
+    width: 100%;
+    display: block;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+label {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+label img {
+    position: absolute;
+    bottom: -43px;
+    left: 16px;
+    z-index: 2;
+}
+
+input {
+    font-size: 1rem;
+    color: #525252;
+    padding: .75rem 0 .75rem 3rem;
+    border: 1px solid #BABABA;
+    border-radius: .5rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+input:focus {
+    outline: 1.5px solid #2B7A78;
+    border: 1px solid #2B7A78;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+form button {
+    padding: .75rem 2rem !important;
+    font-weight: 600;
+}
+
+form button img {
+    transform: translateY(4px);
+}
+
+.proceed {
+    background: #2B7A78;
+    color: #FEFEFE;
+}
+
+.back {
+    border: 1px solid #2B7A78 !important;
+    color: #2B7A78;
+}
+
+.modal {
+    transform: scale(1);
+    z-index: 99999;
+}
+
+.modal-form2 {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.back {
+    transform: scale(0);
+    transition: all 0.25s linear;
+}
+
+.second-text {
+    display: none;
+}
+
 .menu-btn,
 .close-btn {
     display: none;
 }
 
-@media screen and (max-width: 553px) {
-aside {
-    position: fixed;
-    top: 0;
-    transform: translateX(-40rem);
-    transition: all 0.3s linear;
-    background: #2727277a;
-    width: 100%;
-    z-index: 9999;
+.modal-form2 div {
+    display: flex;
+    align-items: center;
 }
 
-.logo {
+.modal-form2 div label {
+    font-size: 1.25rem;
+}
+
+.changes .back {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.changes .progress-bar::after {
+    width: 50%;
+}
+
+.changes .modal-form1 {
+    display: none;
+}
+
+.changes .progress-bar::after {
+    width: 50%;
+}
+
+.changes .modal-form2 {
     display: block;
 }
 
-.sidebar {
-    border-radius: 0 1rem 1rem 0;
-    height: 100vh;
+.changes .inner-wrapper {
+    padding-top: 0;
 }
 
-.sidebar-expander {
+.proceed-btn, .details {
     display: none;
 }
+
+.changes .proceed,
+.changes .business-detais {
+display: none;
+}
+
+.changes .proceed-btn,
+.changes .details {
+    display: block;
+}
+
+.add-progress .progress-bar::after {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    accent-color: #2B7A78;
+    width: 24px;
+    height: 24px;
+    border-radius: .5rem;
+    padding: 0;
+    outline: none;
+    margin: -8px 10px 0 0;
+}
+
+.changes .terms-features {
+    display: none;
+}
+
+@media screen and (max-width: 553px) {
+    aside {
+        position: fixed;
+        top: 0;
+        transform: translateX(-40rem);
+        transition: all 0.3s linear;
+        background: #2727277a;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .sidebar {
+        border-radius: 0 1rem 1rem 0;
+        height: 100vh;
+    }
+
+    .sidebar-expander {
+        display: none;
+    }
 
     .terms-wrapper {
         gap: 1.3rem;

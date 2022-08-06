@@ -23,9 +23,9 @@
                                 <img src="close-square.svg" alt="menu icon">
                             </button>
                         </div>
-                            <button class="sidebar-expander">
-                                <img src="cirecle-arrow.svg" alt="circled arrow icon">
-                            </button>
+                        <button class="sidebar-expander">
+                            <img src="cirecle-arrow.svg" alt="circled arrow icon">
+                        </button>
                         <a href="#" class="logo-link">
                             <span><img src="../images/logo.svg" alt="TermBuddy Logo"></span>
                             <p>TB</p>
@@ -84,7 +84,7 @@
                         <div class="terms">
                             <h2>Terms and Conditions</h2>
                             <div class="terms-wrapper">
-                                <button class="docu-btn">
+                                <button class="docu-btn new-doc">
                                     <div>
                                         <img src="plus.svg" alt="plus icon">
                                     </div>
@@ -105,7 +105,7 @@
                         <div class="privacy">
                             <h2>Privacy Policy</h2>
                             <div class="privacy-wrapper terms-wrapper">
-                                <button class="docu-btn">
+                                <button class="docu-btn new-doc">
                                     <img src="plus.svg" alt="plus icon">
                                     <p><img src="file.svg" alt="file icon">New</p>
                                 </button>
@@ -146,6 +146,12 @@
                         <div class="privacy">
                             <h2>Terms and Conditions</h2>
                             <div class="privacy-wrapper terms-wrapper">
+                                <button class="docu-btn new-doc">
+                                    <div>
+                                        <img src="plus.svg" alt="plus icon">
+                                    </div>
+                                    <p> <img src="file.svg" alt="file icon">New</p>
+                                </button>
                                 <button class="docu-btn docu-primary">
                                     <div>
                                         <img src="docu-image.png" alt="an image of a document">
@@ -184,6 +190,12 @@
                         <div class="privacy">
                             <h2>Privacy Policy</h2>
                             <div class="privacy-wrapper terms-wrapper">
+                                <button class="docu-btn new-doc">
+                                    <div>
+                                        <img src="plus.svg" alt="plus icon">
+                                    </div>
+                                    <p> <img src="file.svg" alt="file icon">New</p>
+                                </button>
                                 <button class="docu-btn docu-primary">
                                     <div>
                                         <img src="docu-image.png" alt="an image of a document">
@@ -245,6 +257,159 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal-wrapper">
+                <div class="inner-wrapper">
+                    <div class="modal-form-wrapper">
+                        <button class="form-cls new-doc">
+                            <img src="cls.svg" alt="a close icon">
+                        </button>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar">
+                            </div>
+                            <small>Your changes are saved automatically</small>
+                        </div>
+                        <div class="first-text">
+                            <h2>Privacy Policy Generator</h2>
+                            <h3>Business Details</h3>
+                            <p>Please input your business details</p>
+                        </div>
+                        <div class="second-text">
+                            <h2>Terms and conditions</h2>
+                            <h3>Document details</h3>
+                            <p>Please select the content of the document</p>
+                        </div>
+                        <form action="" class="business-details">
+                            <div class="modal-form1 modal2">
+                                <div>
+                                    <label for="bizname">Business Name
+                                        <img src="shop.svg" alt="shop icon">
+                                    </label>
+                                    <input type="text" name="bizname" id="bizname" placeholder="John Doe Limited">
+                                </div>
+                                <div>
+                                    <label for="url">Website URL
+                                        <img src="global.svg" alt="globe icon">
+                                    </label>
+                                    <input type="text" name="url" id="url" placeholder="www.johndoe.com">
+                                </div>
+                                <div>
+                                    <label for="email">Email
+                                        <img src="input-email.svg" alt="envelope icon">
+                                    </label>
+                                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                                </div>
+                                <div>
+                                    <label for="phone">Phone
+                                        <img src="call.svg" alt="phone icon">
+                                    </label>
+                                    <input type="text" name="phone" id="phone" placeholder="+234 812 657 9745">
+                                </div>
+                            </div>
+                            <div class="modal-form2">
+                                <div>
+                                    <input type="checkbox" name="name" id="name">
+                                    <label for="name">Name of Template
+                                    </label>                                  
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="cookies" id="cookies">
+                                    <label for="cookies">Cookies
+                                    </label>                                  
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="reserved" id="reserved">
+                                    <label for="reserved">All Rights Reserved
+                                    </label>                                  
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="copyright" id="copyright">
+                                    <label for="copyright">Copyright
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper">
+                                <button class="back"><img src="arrow-circle-left.svg" alt="right arrow icon">
+                                    Back
+                                </button>
+                                <button type="submit" class="proceed">
+                                    Proceed
+                                    <img src="arrow-circle-right.svg" alt="right arrow icon">
+                                </button>
+                                <button type="submit" class="proceed-btn proceed">
+                                    Proceed
+                                    <img src="arrow-circle-right.svg" alt="right arrow icon">
+                                </button>
+                            </div>
+                        </form>
+                        <form action="" class="details">
+                            <div class="modal-form1">
+                                <div>
+                                    <label for="bizname">Business Name
+                                        <img src="shop.svg" alt="shop icon">
+                                    </label>
+                                    <input type="text" name="bizname" id="bizname" placeholder="John Doe Limited">
+                                </div>
+                                <div>
+                                    <label for="url">Website URL
+                                        <img src="global.svg" alt="globe icon">
+                                    </label>
+                                    <input type="text" name="url" id="url" placeholder="www.johndoe.com">
+                                </div>
+                                <div>
+                                    <label for="email">Email
+                                        <img src="input-email.svg" alt="envelope icon">
+                                    </label>
+                                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                                </div>
+                                <div>
+                                    <label for="phone">Phone
+                                        <img src="call.svg" alt="phone icon">
+                                    </label>
+                                    <input type="text" name="phone" id="phone" placeholder="+234 812 657 9745">
+                                </div>
+                            </div>
+                            <div class="modal-form2">
+                                <div>
+                                    <input type="checkbox" name="name" id="name">
+                                    <label for="name">Name of Template
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="cookies" id="cookies">
+                                    <label for="cookies">Cookies
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="reserved" id="reserved">
+                                    <label for="reserved">All Rights Reserved
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="copyright" id="copyright">
+                                    <label for="copyright">Copyright
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper">
+                                <button class="back" type="button"><img src="arrow-circle-left.svg" alt="right arrow icon">
+                                    Back
+                                </button>
+                                <button type="submit" class="proceed">
+                                    Proceed
+                                    <img src="arrow-circle-right.svg" alt="right arrow icon">
+                                </button>
+                                <button type="submit" class="proceed-btn proceed">
+                                    Proceed
+                                    <img src="arrow-circle-right.svg" alt="right arrow icon">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </main>
     </div>
 
