@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>TermBuddy | Homepage</title>
+</head>
+
+<body>
+    <div class="flex">
+        <aside class="">
+            <div class="sidebar">
+                <div>
+                    <div class="logo">
+                        <div>
+                            <button class="close-btn toggler">
+                                <img src="close-square.svg" alt="menu icon">
+                            </button>
+                        </div>
+                            <button class="sidebar-expander">
+                                <img src="cirecle-arrow.svg" alt="circled arrow icon">
+                            </button>
+                        <a href="#" class="logo-link">
+                            <span><img src="../images/logo.svg" alt="TermBuddy Logo"></span>
+                            <p>TB</p>
+                        </a>
+                    </div>
+                    <div class="tab-menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="tab-a active-a" data-id="tab1">
+                                    <img src="home.svg" alt="home icon">
+                                    <span>dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tab-a" data-id="tab2">
+                                    <img src="file.svg" alt="file icon"> <span>T&Cs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tab-a" data-id="tab3">
+                                    <img src="policy.svg" alt="file icon"> <span>privacy policy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tab-a" data-id="tab4">
+                                    <img src="user.svg" alt="user icon"> <span>profile</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logout-btn">
+                    <a href="#"><img src="logout.svg" alt="logout icon"> <span>log out</span></a>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="dashboard-header">
+                <div>
+                    <div>
+                        <button class="menu-btn toggler">
+                            <img src="menu.svg" alt="menu icon">
+                        </button>
+                    </div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome <span class="firstname">!</span></p>
+                </div>
+                <div class="profile-img">
+                    <p>SA</p>
+                </div>
+            </div>
+            <div class="tab-content">
+                <!-- Dashboard Tab -->
+                <div class="tab tab-active" data-id="tab1">
+                    <section class="wrapper">
+                        <div class="terms">
+                            <h2>Terms and Conditions</h2>
+                            <div class="terms-wrapper">
+                                <button class="docu-btn">
+                                    <div>
+                                        <img src="plus.svg" alt="plus icon">
+                                    </div>
+                                    <p> <img src="file.svg" alt="file icon">New</p>
+                                </button>
+                                <button class="docu-btn docu-primary">
+                                    <div>
+                                        <img src="docu-image.png" alt="an image of a document">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <img src="edit.svg" alt="a pen icon">Edit
+                                        </p>
+                                    </div>
+                                </button>
+                                <button class="docu-btn docu-primary">
+                                    <div>
+                                        <img src="docu-image.png" alt="an image of a document">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <img src="eye.svg" alt="an eye icon">Preview
+                                        </p>
+                                    </div>
+                                </button>
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p> <img src="file.svg" alt="file icon">New</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="privacy">
+                            <h2>Privacy Policy</h2>
+                            <div class="privacy-wrapper terms-wrapper">
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p><img src="file.svg" alt="file icon">New</p>
+                                </button>
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p><img src="file.svg" alt="file icon">New</p>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <!-- T&Cs Tab -->
+                <div class="tab" data-id="tab2">
+                    <section class="wrapper">
+                        <div class="terms">
+                            <h2>Drafts</h2>
+                            <div class="terms-wrapper">
+                                <button class="docu-btn docu-primary">
+                                    <div>
+                                        <img src="docu-image.png" alt="an image of a document">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <img src="edit.svg" alt="a pen icon">Edit
+                                        </p>
+                                    </div>
+                                </button>
+                                <button class="docu-btn docu-primary">
+                                    <div>
+                                        <img src="docu-image.png" alt="an image of a document">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <img src="eye.svg" alt="an eye icon">Preview
+                                        </p>
+                                    </div>
+                                </button>
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p> <img src="file.svg" alt="file icon">New</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="privacy">
+                            <h2>Terms and Conditions</h2>
+                            <div class="privacy-wrapper terms-wrapper">
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p><img src="file.svg" alt="file icon">New</p>
+                                </button>
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p><img src="file.svg" alt="file icon">New</p>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+
+                <!-- Privacy Tab -->
+                <div class="tab" data-id="tab3">
+                    <section class="wrapper">
+                        <div class="terms">
+                            <h2>Drafts</h2>
+                            <div class="terms-wrapper">
+                                <button class="docu-btn">
+                                    <div>
+                                        <img src="plus.svg" alt="plus icon">
+                                    </div>
+                                    <p> <img src="file.svg" alt="file icon">New</p>
+                                </button>
+                                <button class="docu-btn docu-primary">
+                                    <div>
+                                        <img src="docu-image.png" alt="an image of a document">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <img src="edit.svg" alt="a pen icon">Edit
+                                        </p>
+                                    </div>
+                                </button>
+                                <button class="docu-btn docu-primary">
+                                    <div>
+                                        <img src="docu-image.png" alt="an image of a document">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <img src="eye.svg" alt="an eye icon">Preview
+                                        </p>
+                                    </div>
+                                </button>
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p> <img src="file.svg" alt="file icon">New</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="privacy">
+                            <h2>Privacy Policy</h2>
+                            <div class="privacy-wrapper terms-wrapper">
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p><img src="file.svg" alt="file icon">New</p>
+                                </button>
+                                <button class="docu-btn">
+                                    <img src="plus.svg" alt="plus icon">
+                                    <p><img src="file.svg" alt="file icon">New</p>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+
+                <!-- Profile Tab -->
+                <div class="tab" data-id="tab4">
+                    <div class="profile-wrapper">
+                        <div>
+                            <div class="avatar white">
+                                <div>
+                                    <img src="" alt="avatar">
+                                    <span class="name">Ashley Cole</span>
+                                </div>
+                                <div>
+                                    <span class="num-text">Phone</span>
+                                    <span class="num-figure">+44 7123456789</span>
+                                </div>
+                                <div>
+                                    <span class="num-text">Email</span>
+                                    <span class="num-figure">+44 7123456789</span>
+                                </div>
+                                <div class="edit-btn">
+                                    <button><img src="" alt="pen icon"> Edit</button>
+                                </div>
+                            </div>
+                            <div class="password white">
+                                <div>
+                                    <span class="num-text">Email</span>
+                                    <span class="num-figure">+44 7123456789</span>
+                                </div>
+                                <div class="edit-btn">
+                                    <button><img src="" alt="pen icon"> Change Password</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="draft white">
+                                <h2>totoal draft</h2>
+                                <p>5</p>
+                            </div>
+                            <div class="saved white">
+                                <h2>totoal saved</h2>
+                                <p>48</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

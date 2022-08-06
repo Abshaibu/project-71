@@ -16,6 +16,11 @@
     <header>
         <div class="container">
             <div class="logo">
+                <div class="hamburger">
+                    <button>
+                        <img src="menu.svg" alt="a hamburger menu icon">
+                    </button>
+                </div>
                 <a href="index.html">
                     <img src="./images/logo.svg" alt="TermBuddy Logo">
                 </a>
@@ -31,11 +36,11 @@
                 </ul>
             </nav>
             <div class="auth-links">
-                <a href="./Login/login.html">sign in</a>
-                <a href="./Signup/signup.html">sign up</a>
-            </div>
-            <div class="hamburger">
-                <img src="" alt="a hamburger menu icon">
+                <div class="not-user">
+                    <a href="./Login/login.html">sign in</a>
+                    <a href="./Signup/signup.html">sign up</a>
+                </div>
+                <!-- <a href=".dashboard.html">Dashboard</a> -->
             </div>
         </div>
     </header>
@@ -388,7 +393,18 @@
 
     <script>
         document.querySelectorAll('.faq-btn').forEach(faq => faq.addEventListener('click', (e) => {
-            e.target.parentElement.classList.toggle('open')
+            if (e.target.parentElement.classList.contains('set-height')) {
+                e.target.parentElement.classList.remove('set-height');
+                e.target.parentElement.classList.toggle('open');
+            } else {
+                e.target.parentElement.classList.toggle('open');
+            }
+        }))
+
+        document.querySelectorAll('.faq-btn').forEach(faq => faq.addEventListener('transitionend', (e) => {
+            if (e.target.parentElement.classList.contains('open')) {
+                e.target.parentElement.classList.add('set-height')
+            }
         }))
     </script>
 </body>

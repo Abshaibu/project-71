@@ -344,11 +344,15 @@ padding: 2rem 0;
     padding: 0 1.5rem 1rem ;
     margin-bottom: 1rem;
     border-radius: .5rem;
-    transition: all 0.3s linear;
+    transition: all 0.35s linear;
 }
 
 .open {
     height: 130px;
+}
+
+.set-height {
+    height: auto;
 }
 
 .faq .faq-btn {
@@ -465,6 +469,10 @@ form {
     display: flex;
 }
 
+.footer-links div:first-child {
+    margin-top: .5rem;
+}
+
 footer,
 footer a,
 footer h5 {
@@ -508,4 +516,14 @@ footer p small {
     font-weight: 400;
     font-size: 1rem;
     margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 999px) {
+    header nav {
+        display: none;
+    }
+
+    .not-user {
+        display: none;
+    }
 }

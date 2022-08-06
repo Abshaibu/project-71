@@ -21,7 +21,9 @@
                         <img src="../images/logo.svg" alt="Logo">
                     </a>
                 </div>
-                <div></div>
+                <div>
+                    <a href="../Signup/signup.html"><button>Sign Up</button></a>
+                </div>
             </div>
         </div>
     </header>
@@ -36,7 +38,7 @@
                         <h2>Create New Password</h2>
                         <p>Type in your new password</p>
                     </div>
-                    <form action="">
+                    <form action="" id="form">
                         <label for="password">New Password
                             <img class="input-icon" src="input-security.svg" alt="an icon of a padlock">
                             <img class="input-icon eye-off" src="eye-off.svg" alt="an icon of an eye with a slash on it">
@@ -44,12 +46,12 @@
                                 alt="an icon of an eye with a slash on it">
                         </label>
                         <input type="password" name="password" id="password" placeholder="*******">
-                        <p class="error-message">
+                        <p class="error-message incorrect">
                             <span class="error-icon">
                                 <img src="../x-icon.svg" alt="an x icon">
                             </span>
                             <span class="error-text">
-                                Provide a valid email address
+                                Password must be at least 8 characters long
                             </span>
                         </p>
                         <input type="submit" value="Create Passsword">
@@ -59,6 +61,8 @@
             </div>
         </section>
     </main>
+
+    <script src="reset.js"></script>
 </body>
 
 </html>

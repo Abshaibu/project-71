@@ -171,6 +171,7 @@ input {
     display: flex;
     align-items: center;
     gap: .6rem;
+    text-align: left;
     display: none;
 }
 
