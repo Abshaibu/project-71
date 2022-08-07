@@ -434,6 +434,7 @@ form button img {
 .back {
     transform: scale(0);
     transition: all 0.25s linear;
+    opacity: 0;
 }
 
 
@@ -791,6 +792,18 @@ input[type="checkbox"] {
     .avatar_img {
         width: 64px;
         height: 64px;
+    }
+
+    .modal-form-wrapper {
+        padding: 2rem;
+    }
+
+    .progress-bar-wrapper {
+        margin-top: 2rem;
+    }
+
+    form button {
+        padding: 0.75rem 1.6rem !important;
     }
 
     .white_alt {
