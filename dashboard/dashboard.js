@@ -2,8 +2,11 @@ const expander = document.querySelector('.sidebar-expander');
 const sidebar = document.querySelector('.sidebar');
 const aside = document.querySelector('aside');
 const openModal = document.querySelector('.modal-wrapper');
+const modalOne = document.querySelector('.modal1');
+const modalTwo = document.querySelector('.modal2');
 const toggler = document.querySelectorAll('.toggler');
-const newDocModal = document.querySelectorAll('.new-doc');
+const modalOnes = document.querySelectorAll('.modal1-btn');
+const modalTwos = document.querySelectorAll('.modal2-btn');
 const body = document.querySelector('body');
 
 
@@ -20,58 +23,93 @@ toggler.forEach(toggle => {
     })
 })
 
-// New Document Modal
-newDocModal.forEach(newDoc => {
-    newDoc.addEventListener('click', () => {
-        openModal.classList.toggle('modal');
+// New Terms Modal
+modalOnes.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+        document.querySelector(".modal1").classList.toggle('modal');
         body.classList.toggle('no-scroll');
+        openModal.classList.remove('changes');
     })
 })
 
-// Business Details Form
-const bizDetails = document.querySelector(".business-details");
-const companyDetails = {};
+// New Policy Modal
+modalTwos.forEach(modal2 => {
+    modal2.addEventListener('click', (e) => {
+        modalTwo.classList.toggle('modal');
+        body.classList.toggle('no-scroll');
+        openModal.classList.remove('changes');
+    })
+})
+
+// Business Conditions Details Form
+const bizDetails = document.querySelector(".conditions-details");
+const consDetails = {};
 bizDetails.addEventListener('submit', (e) => {
     e.preventDefault();
-    // e.stopPropagation()
 
-    companyDetails.name = document.querySelector('#bizname').value;
-    companyDetails.phone = document.querySelector('#phone').value;
-    companyDetails.email = document.querySelector('#email').value;
-    companyDetails.website = document.querySelector('#url').value;
-    console.log(companyDetails);
-    openModal.classList.add('changes')
-    bizDetails.classList.add('terms-features');
-    bizDetails.classList.remove('business-details');
+    consDetails.name = document.querySelector('#bizname').value;
+    consDetails.phone = document.querySelector('#phone').value;
+    consDetails.email = document.querySelector('#email').value;
+    consDetails.website = document.querySelector('#url').value;
+    consDetails.reserved = document.querySelector('#reserved').value;
+    consDetails.cookies = document.querySelector('#cookies').value;
+    consDetails.copyright = document.querySelector('#copyright').value;
+    consDetails.tempname = document.querySelector('#tempname').value;
+    modalOne.classList.add('add-progress');
+    body.classList.toggle('no-scroll');
+    document.querySelector('.heading').innerHTML = 'Preview';
+    // document.querySelector('.dashboard').innerHTML = 'Preview';
+
+    setTimeout(() => {
+        modalOne.classList.toggle('modal');
+        modalOne.classList.remove('changes');
+        modalOne.classList.remove('add-progress');
+        bizDetails.reset();
+    },700);
+
+
+    console.log(consDetails);
 })
 
-// Terms Features
-const details = document.querySelector(".details");
-const features = {};
-details.addEventListener('submit', (e) => {
+// Business Privacy Details Form
+const priDetails = document.querySelector(".privacy-details");
+const privacyDetails = {};
+priDetails.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const formData = new FormData(details);
-    const data = Object.fromEntries(formData);
-    console.log(data);
+    privacyDetails.name = document.querySelector('#mbizname').value;
+    privacyDetails.phone = document.querySelector('#mphone').value;
+    privacyDetails.email = document.querySelector('#memail').value;
+    privacyDetails.website = document.querySelector('#murl').value;
+    privacyDetails.reserved = document.querySelector('#mreserved').value;
+    privacyDetails.cookies = document.querySelector('#mcookies').value;
+    privacyDetails.copyright = document.querySelector('#mcopyright').value;
+    privacyDetails.tempname = document.querySelector('#mtempname').value;
+    modalTwo.classList.add('add-progress');
+    body.classList.toggle('no-scroll');
+    document.querySelector('.heading').innerHTML = 'Preview';
+    // document.querySelector('.dashboard').innerHTML = 'Preview';
 
-    openModal.classList.add('add-progress');
-    console.log(features);
-    // openModal.classList.remove('changes')
-    // openModal.classList.toggle('modal');
-    // body.classList.toggle('no-scroll');
+    setTimeout(() => {
+        modalTwo.classList.toggle('modal');
+        modalTwo.classList.remove('changes');
+        modalTwo.classList.remove('add-progress');
+        priDetails.reset();
+    }, 700);
 
-    // close and show preview page
+
+    console.log(privacyDetails);
 })
 
-// Back to Business Details
-const backBtn = document.querySelector('.back');
-backBtn.addEventListener('click', (e) => {
-    console.log(e.target); 
-    openModal.classList.remove('changes');
-    openModal.classList.remove('add-progress');
-    bizDetails.classList.remove('terms-features');
-    bizDetails.classList.add('business-details');
+// Switching Form Content
+const switchForms = document.querySelectorAll('.switch-form');
+switchForms.forEach(swap => {
+    swap.addEventListener('click', () => {
+        openModal.classList.toggle('changes');
+        openModal.classList.remove('add-progress');
+        modalTwo.classList.toggle('changes');
+        modalTwo.classList.remove('add-progress');
+    })
 })
 
 // Tabs Switcher

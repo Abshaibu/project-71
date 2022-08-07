@@ -70,7 +70,7 @@
                             <img src="menu.svg" alt="menu icon">
                         </button>
                     </div>
-                    <h1>Dashboard</h1>
+                    <h1 class="heading">Dashboard</h1>
                     <p>Welcome <span class="firstname">!</span></p>
                 </div>
                 <div class="profile-img">
@@ -80,11 +80,11 @@
             <div class="tab-content">
                 <!-- Dashboard Tab -->
                 <div class="tab tab-active" data-id="tab1">
-                    <section class="wrapper">
+                    <section class="wrapper dashboard">
                         <div class="terms">
                             <h2>Terms and Conditions</h2>
                             <div class="terms-wrapper">
-                                <button class="docu-btn new-doc">
+                                <button class="docu-btn modal1-btn terms-btn">
                                     <div>
                                         <img src="plus.svg" alt="plus icon">
                                     </div>
@@ -105,9 +105,9 @@
                         <div class="privacy">
                             <h2>Privacy Policy</h2>
                             <div class="privacy-wrapper terms-wrapper">
-                                <button class="docu-btn new-doc">
+                                <button class="docu-btn modal2-btn privacy-btn">
                                     <img src="plus.svg" alt="plus icon">
-                                    <p><img src="file.svg" alt="file icon">New</p>
+                                    <p><img src="policy.svg" alt="file icon">New</p>
                                 </button>
                                 <button class="docu-btn docu-primary">
                                     <div>
@@ -146,7 +146,7 @@
                         <div class="privacy">
                             <h2>Terms and Conditions</h2>
                             <div class="privacy-wrapper terms-wrapper">
-                                <button class="docu-btn new-doc">
+                                <button class="docu-btn modal1-btn terms-btn">
                                     <div>
                                         <img src="plus.svg" alt="plus icon">
                                     </div>
@@ -190,11 +190,11 @@
                         <div class="privacy">
                             <h2>Privacy Policy</h2>
                             <div class="privacy-wrapper terms-wrapper">
-                                <button class="docu-btn new-doc">
+                                <button class="docu-btn modal2-btn privacy-btn">
                                     <div>
                                         <img src="plus.svg" alt="plus icon">
                                     </div>
-                                    <p> <img src="file.svg" alt="file icon">New</p>
+                                    <p> <img src="policy.svg" alt="file icon">New</p>
                                 </button>
                                 <button class="docu-btn docu-primary">
                                     <div>
@@ -216,53 +216,60 @@
                 <!-- Profile Tab -->
                 <div class="tab" data-id="tab4">
                     <div class="profile-wrapper">
-                        <div>
-                            <div class="avatar white">
-                                <div>
-                                    <img src="" alt="avatar">
-                                    <span class="name">Ashley Cole</span>
+                        <div class="left">
+                            <div class="avatar white shadow">
+                                <div class="first avatar_alt">
+                                    <div class="profile-img">
+                                        <p>SA</p>
+                                    </div>
+                                    <span class="name alt alt_alt">Ashley Cole</span>
                                 </div>
-                                <div>
-                                    <span class="num-text">Phone</span>
+                                <div class="second avatar_alt">
+                                    <span class="num-text alt">Phone Number</span>
                                     <span class="num-figure">+44 7123456789</span>
                                 </div>
-                                <div>
-                                    <span class="num-text">Email</span>
-                                    <span class="num-figure">+44 7123456789</span>
+                                <div class="third avatar_alt avatar_alt_alt">
+                                    <span class="num-text  alt">Email</span>
+                                    <div class="edit-btn">
+                                        <span class="num-figure">Ashleycole@gmail.com</span>
+                                        <button class="edit_btn">
+                                            <img src="edit-2.svg" alt="pen icon">
+                                            Edit
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="edit-btn">
-                                    <button><img src="" alt="pen icon"> Edit</button>
-                                </div>
+
                             </div>
-                            <div class="password white">
-                                <div>
-                                    <span class="num-text">Email</span>
-                                    <span class="num-figure">+44 7123456789</span>
-                                </div>
+                            <div class="password white shadow">
+                                <span class="num-text  alt">Password</span>
                                 <div class="edit-btn">
-                                    <button><img src="" alt="pen icon"> Change Password</button>
+                                    <span class="star">**********</span>
+                                    <button class="edit_btn ed_btn">
+                                        <img src="edit-2.svg" alt="pen icon">
+                                        Change Password
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="draft white">
-                                <h2>totoal draft</h2>
+                        <div class="right">
+                            <div class="draft white white_alt shadow">
+                                <h2>Total Number of Drafts Created</h2>
                                 <p>5</p>
                             </div>
-                            <div class="saved white">
-                                <h2>totoal saved</h2>
-                                <p>48</p>
+                            <div class="saved white white_alt white_alt_two shadow ">
+                                <h2 class="chop">Total Number of Saved Documents</h2>
+                                <p class="cc">48</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal -->
-            <div class="modal-wrapper">
+            <!-- Terms Modal -->
+            <div class="modal-wrapper modal1">
                 <div class="inner-wrapper">
                     <div class="modal-form-wrapper">
-                        <button class="form-cls new-doc">
+                        <button class="form-cls modal1-btn">
                             <img src="cls.svg" alt="a close icon">
                         </button>
                         <div class="progress-bar-wrapper">
@@ -270,18 +277,18 @@
                             </div>
                             <small>Your changes are saved automatically</small>
                         </div>
-                        <div class="first-text">
-                            <h2>Privacy Policy Generator</h2>
-                            <h3>Business Details</h3>
-                            <p>Please input your business details</p>
-                        </div>
-                        <div class="second-text">
-                            <h2>Terms and conditions</h2>
-                            <h3>Document details</h3>
-                            <p>Please select the content of the document</p>
-                        </div>
-                        <form action="" class="business-details">
-                            <div class="modal-form1 modal2">
+                            <div class="first-texts">
+                                <h2>T&Cs Generator</h2>
+                                <h3>Business Details</h3>
+                                <p>Please input your business details</p>
+                            </div>
+                            <div class="second-texts">
+                                <h2>T&Cs Generator</h2>
+                                <h3>Document Details</h3>
+                                <p>Please select the content of the document</p>
+                            </div>
+                        <form action="" class="conditions-details">
+                            <div class="terms-details">
                                 <div>
                                     <label for="bizname">Business Name
                                         <img src="shop.svg" alt="shop icon">
@@ -307,100 +314,128 @@
                                     <input type="text" name="phone" id="phone" placeholder="+234 812 657 9745">
                                 </div>
                             </div>
-                            <div class="modal-form2">
+                            <div class="terms-features">
                                 <div>
-                                    <input type="checkbox" name="name" id="name">
-                                    <label for="name">Name of Template
+                                    <input type="checkbox" name="temp-name" id="tempname" value="tempname">
+                                    <label for="tempname">Name of Template
                                     </label>                                  
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="cookies" id="cookies">
+                                    <input type="checkbox" name="cookies" id="cookies" value="Cookies">
                                     <label for="cookies">Cookies
                                     </label>                                  
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="reserved" id="reserved">
+                                    <input type="checkbox" name="reserved" id="reserved" value="reserved">
                                     <label for="reserved">All Rights Reserved
                                     </label>                                  
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="copyright" id="copyright">
+                                    <input type="checkbox" name="copyright" id="copyright" value="copyright">
                                     <label for="copyright">Copyright
                                     </label>
                                 </div>
                             </div>
                             <div class="btn-wrapper">
-                                <button class="back"><img src="arrow-circle-left.svg" alt="right arrow icon">
+                                <button class="back switch-form" type="button"><img src="arrow-circle-left.svg"
+                                        alt="right arrow icon">
                                     Back
                                 </button>
-                                <button type="submit" class="proceed">
+                                <button type="button" class="proceed switch-form">
                                     Proceed
                                     <img src="arrow-circle-right.svg" alt="right arrow icon">
                                 </button>
-                                <button type="submit" class="proceed-btn proceed">
+                                <button type="submit" class="proceed submit-btn">
                                     Proceed
                                     <img src="arrow-circle-right.svg" alt="right arrow icon">
                                 </button>
                             </div>
                         </form>
-                        <form action="" class="details">
-                            <div class="modal-form1">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Modal -->
+            <div class="modal-wrapper modal2">
+                <div class="inner-wrapper">
+                    <div class="modal-form-wrapper">
+                        <button class="form-cls modal2-btn">
+                            <img src="cls.svg" alt="a close icon">
+                        </button>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar">
+                            </div>
+                            <small>Your changes are saved automatically</small>
+                        </div>
+                        <div class="first-texts">
+                            <h2>Privacy Policy Generator</h2>
+                            <h3>Business Details</h3>
+                            <p>Please input your business details</p>
+                        </div>
+                        <div class="second-texts">
+                            <h2>Privacy Policy Generator</h2>
+                            <h3>Document Details</h3>
+                            <p>Please select the content of the document</p>
+                        </div>
+                        <form action="" class="privacy-details">
+                            <div class="terms-details">
                                 <div>
-                                    <label for="bizname">Business Name
+                                    <label for="mbizname">Business Name
                                         <img src="shop.svg" alt="shop icon">
                                     </label>
-                                    <input type="text" name="bizname" id="bizname" placeholder="John Doe Limited">
+                                    <input type="text" name="bizname" id="mbizname" placeholder="John Doe Limited">
                                 </div>
                                 <div>
-                                    <label for="url">Website URL
+                                    <label for="murl">Website URL
                                         <img src="global.svg" alt="globe icon">
                                     </label>
-                                    <input type="text" name="url" id="url" placeholder="www.johndoe.com">
+                                    <input type="text" name="url" id="murl" placeholder="www.johndoe.com">
                                 </div>
                                 <div>
-                                    <label for="email">Email
+                                    <label for="memail">Email
                                         <img src="input-email.svg" alt="envelope icon">
                                     </label>
-                                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                                    <input type="email" name="email" id="memail" placeholder="johndoe@gmail.com">
                                 </div>
                                 <div>
-                                    <label for="phone">Phone
+                                    <label for="mphone">Phone
                                         <img src="call.svg" alt="phone icon">
                                     </label>
-                                    <input type="text" name="phone" id="phone" placeholder="+234 812 657 9745">
+                                    <input type="text" name="phone" id="mphone" placeholder="+234 812 657 9745">
                                 </div>
                             </div>
-                            <div class="modal-form2">
+                            <div class="terms-features">
                                 <div>
-                                    <input type="checkbox" name="name" id="name">
-                                    <label for="name">Name of Template
+                                    <input type="checkbox" name="temp-name" id="mtempname" value="tempname">
+                                    <label for="mtempname">Name of Template
                                     </label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="cookies" id="cookies">
-                                    <label for="cookies">Cookies
+                                    <input type="checkbox" name="cookies" id="mcookies" value="Cookies">
+                                    <label for="mcookies">Cookies
                                     </label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="reserved" id="reserved">
-                                    <label for="reserved">All Rights Reserved
+                                    <input type="checkbox" name="reserved" id="mreserved" value="reserved">
+                                    <label for="mreserved">All Rights Reserved
                                     </label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="copyright" id="copyright">
-                                    <label for="copyright">Copyright
+                                    <input type="checkbox" name="copyright" id="mcopyright" value="copyright">
+                                    <label for="mcopyright">Copyright
                                     </label>
                                 </div>
                             </div>
                             <div class="btn-wrapper">
-                                <button class="back" type="button"><img src="arrow-circle-left.svg" alt="right arrow icon">
+                                <button class="back switch-form" type="button"><img src="arrow-circle-left.svg"
+                                        alt="right arrow icon">
                                     Back
                                 </button>
-                                <button type="submit" class="proceed">
+                                <button type="button" class="proceed switch-form">
                                     Proceed
                                     <img src="arrow-circle-right.svg" alt="right arrow icon">
                                 </button>
-                                <button type="submit" class="proceed-btn proceed">
+                                <button type="submit" class="proceed submit-btn">
                                     Proceed
                                     <img src="arrow-circle-right.svg" alt="right arrow icon">
                                 </button>
