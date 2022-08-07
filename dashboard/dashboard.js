@@ -26,9 +26,10 @@ toggler.forEach(toggle => {
 // New Terms Modal
 modalOnes.forEach(modal => {
     modal.addEventListener('click', (e) => {
-        document.querySelector(".modal1").classList.toggle('modal');
+        modalOne.classList.toggle('modal');
         body.classList.toggle('no-scroll');
         openModal.classList.remove('changes');
+        modalTwo.classList.remove('changes');
     })
 })
 
@@ -64,6 +65,7 @@ bizDetails.addEventListener('submit', (e) => {
         modalOne.classList.toggle('modal');
         modalOne.classList.remove('changes');
         modalOne.classList.remove('add-progress');
+        modalTwo.classList.remove('changes');
         bizDetails.reset();
     },700);
 
