@@ -614,6 +614,7 @@ input[type="checkbox"] {
     height: 160px;
     display: flex;
     justify-content: space-between;
+    border-radius: 15px;
 }
 
 .star {

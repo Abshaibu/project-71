@@ -37,6 +37,7 @@ modalOnes.forEach(modal => {
 modalTwos.forEach(modal2 => {
     modal2.addEventListener('click', (e) => {
         modalTwo.classList.toggle('modal');
+        modalTwo.classList.remove('changes');
         body.classList.toggle('no-scroll');
         openModal.classList.remove('changes');
     })
